@@ -2,16 +2,16 @@
 This is specifically designed for Envato authors to be notified via telegram when a new sale is received.
 
 # Installation
-- Clone **envato-sales-notify-telegrambot** into your server root location.
-- Install [Telegram App](https://telegram.org/) in your device.
-- Search ```@BotFather``` & click on ```/start```
-- Then type ```/newbot``` & type a name for your bot then press enter.
-- Copy paste your ```$telegramApiKey``` with your Telegrame Api Token.
-- Paste the following link in your browser. Replace <API-access-token> with the API access token that you identified or created in the previous section:
+1. Clone **envato-sales-notify-telegrambot** into your server root location.
+2. Install [Telegram App](https://telegram.org/) in your device.
+3. Search ```@BotFather``` & click on ```/start```
+4. Then type ```/newbot``` & type a name for your bot then press enter.
+5. Copy paste your ```$telegramApiKey``` with your Telegrame Api Token.
+6. Paste the following link in your browser. Replace <API-access-token> with the API access token that you identified or created in the previous section:
   ```https://api.telegram.org/bot<API-access-token>/getUpdates?offset=0```
-- Send a message to your bot in the Telegram application. The message text can be anything. Your chat history must include at least one message to get your chat ID.
-- Refresh your browser.
-- Identify the numerical chat ID by finding the id inside the chat JSON object. In the example below, the chat ID is ```123456789```
+7. Send a message to your bot in the Telegram application. The message text can be anything. Your chat history must include at least one message to get your chat ID.
+8. Refresh your browser.
+9. Identify the numerical chat ID by finding the id inside the chat JSON object. In the example below, the chat ID is ```123456789```
 
   ```
   {  
@@ -40,11 +40,11 @@ This is specifically designed for Envato authors to be notified via telegram whe
   }
   ```
 
-- Update ```$chatID``` with your Chat ID.
-- Create Envato API by this [link](https://build.envato.com/create-token/) with permission **View the user's items' sales history**
-- Update ```$envatoApiKey``` with your Envato Token
-- Add cronjob like this ```* * * * * cd /root/path/envato-sales-notify-telegrambot/ && php index.php```
-- Enjoy :)
+10. Update ```$chatID``` with your Chat ID.
+11. Create Envato API by this [link](https://build.envato.com/create-token/) with permission **View the user's items' sales history**
+12. Update ```$envatoApiKey``` with your Envato Token
+13. Add cronjob like this ```* * * * * cd /root/path/envato-sales-notify-telegrambot/ && php index.php```
+14. Enjoy :)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
